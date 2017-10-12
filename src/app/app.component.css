@@ -22,4 +22,11 @@
 .game-table td {
   vertical-align: middle;
   border: 1px solid black;
+  font-size: xx-large;
+  min-width: 198px;
+  max-width: 198px;
+}
+
+input.user-input:focus {
+    outline-width: 0;
 }
