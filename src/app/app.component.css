@@ -1,0 +1,25 @@
+.page-body {
+  background:  url('../assets/giftly.png') center center fixed;
+  height: 100%;
+  overflow: scroll;
+}
+
+.tictactoe-box {
+  margin-top: 50%;
+  height: 500px;
+}
+
+.game-table {
+  width: 100%;
+  border: 2px solid red;
+}
+
+.game-table tr {
+  height: 166px;
+  text-align: center;
+}
+
+.game-table td {
+  vertical-align: middle;
+  border: 1px solid black;
+}
