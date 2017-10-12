@@ -23,6 +23,7 @@ export class AppComponent {
   userPlay(i, j) {
     this.tictac[i][j] = 'X';
     this.moves++;
+    this.recordPlay(i, j, 'X');
     if(this.moves != 9) {
       this.randomPlay();
     }
@@ -31,6 +32,7 @@ export class AppComponent {
   autoPlay(i, j){
     this.tictac[i][j] = 'O';
     this.moves++;
+    this.recordPlay(i, j, 'O');
   }
 
   randomPlay(){
@@ -43,7 +45,12 @@ export class AppComponent {
     }
   }
 
-  checkforWin(){
+  checkforWin(){}
 
+  recordPlay(i, j, play) {
+    if(!this.plays[i]){
+      this.plays[i] = [];
+    }
+    this.plays[i][j] = play;
   }
 }
