@@ -1,6 +1,6 @@
 # Tictactoe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
+Learning Angular4 with tictactoe
 
 ## Development server
 
