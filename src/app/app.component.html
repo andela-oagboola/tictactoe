@@ -4,20 +4,10 @@
       <div class="tictactoe-box">
         <div class="table-responsive">
           <table class="table game-table">
-            <tr>
-              <td>0, 0</td>
-              <td>0, 1</td>
-              <td>0, 2</td>
-            </tr>
-            <tr>
-              <td>1,0</td>
-              <td>1,1</td>
-              <td>1,2</td>
-            </tr>
-            <tr>
-              <td>2,0</td>
-              <td>2,1</td>
-              <td>2,2</td>
+            <tr *ngFor="let tic of tictac; let i=index">
+              <td *ngFor="let toe of tic; let j=index" (click)="userPlay(i, j)">
+                {{toe}}
+              </td>
             </tr>
           </table>
         </div>
