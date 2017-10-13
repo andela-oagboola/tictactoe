@@ -2,14 +2,12 @@
   <div class="row tic">
     <div class="col-sm-4 col-sm-offset-4">
       <div class="tictactoe-box">
-        <div class="table-responsive">
-          <table class="table game-table">
-            <tr *ngFor="let tic of tictac; let i=index">
-              <td *ngFor="let toe of tic; let j=index" (click)="userPlay(i, j)">
-                {{toe}}
-              </td>
-            </tr>
-          </table>
+        <div class="game-table">
+          <div class="row tic-rows" *ngFor="let tic of tictac; let i=index">
+            <div class="col-sm-4 tic-col" *ngFor="let toe of tic; let j=index" (click)="userPlay(i, j)">
+              <p class="text-center tic-values">{{toe}}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -14,9 +14,14 @@ export class AppComponent {
     [' ', ' ', ' '],
     [' ', ' ', ' ']
   ];
-  public plays = [];
-  public winnable = [];
+  public playRows = [];
+  public playCols = []
+  public playIndexes = [];
+  public diagonal1 = ['0,0', '1,1', '2,2'];
+  public diagonal2 = ['0,2', '1,1', '2,0'];
   public moves = 0;
+  public corners = ['0,0', '0,2', '2,0', '2,2'];
+  public middle = ['1,1'];
 
   constructor(){}
 
@@ -45,12 +50,20 @@ export class AppComponent {
     }
   }
 
-  checkforWin(){}
+  checkforWin(){
+  }
 
-  recordPlay(i, j, play) {
-    if(!this.plays[i]){
-      this.plays[i] = [];
+  recordPlay(i, j, play) {j
+    console.log('i and j', i, j)
+    if(!this.playRows[i]){
+      this.playRows[i] = [];
     }
-    this.plays[i][j] = play;
+    if(!this.playCols[j]) {
+      this.playCols[j] = [];
+    }
+    this.playRows[i][j] = play;
+    this.playCols[j][i] = play;
+    this.playIndexes.push(i + ',' +j)
   }
 }
+
