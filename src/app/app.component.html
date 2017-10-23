@@ -4,7 +4,7 @@
       <div class="tictactoe-box">
         <div class="game-table">
           <div class="row tic-rows" *ngFor="let tic of tictac; let i=index">
-            <div class="col-sm-4 tic-col" *ngFor="let toe of tic; let j=index" (click)="userPlay(i, j)">
+            <div class="col-sm-4 tic-col" *ngFor="let toe of tic; let j=index" (click)="userPlay(i,j)">
               <p class="text-center tic-values">{{toe}}</p>
             </div>
           </div>
