@@ -14,19 +14,16 @@
   border: 2px solid red;
 }
 
-.game-table tr {
-  height: 166px;
-  text-align: center;
+.tic-rows {
+  border-bottom: 1px solid black;
+  margin: 0;
 }
 
-.game-table td {
-  vertical-align: middle;
-  border: 1px solid black;
-  font-size: xx-large;
-  min-width: 198px;
-  max-width: 198px;
+.tic-col {
+  border-left: 1px solid black;
+  height: 150px;
 }
 
-input.user-input:focus {
-    outline-width: 0;
+.tic-values {
+  line-height: 11;
 }
